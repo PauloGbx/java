@@ -1,0 +1,18 @@
+package br.com.gblix;
+
+public class FactorialDemo {
+
+	long factorial(long n)
+	{
+		return (n==0? 1: n*factorial(n-1));
+	}
+	
+	public static void main(String[] args) {
+	
+		long n = Long.parseLong(args[0]), 
+				result =
+				new FactorialDemo().factorial(n);
+		System.out.println("" + n + "! = " + result);
+	}
+
+}
